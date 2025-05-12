@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Tentang - GoFront Frontend Developer</title>
+<style>
+  /* Reset dan dasar */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Bar navigasi */
+  nav {
+    background: #1a3a3a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    user-select: none;
+  }
+  nav .logo {
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    cursor: default;
+    color: white;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.4rem;
+  }
+  nav ul li {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  nav ul li:hover, nav ul li:focus {
+    color: #a6d8d8;
+    outline: none;
+  }
+  nav ul li[aria-current="page"] {
+    color: #a6d8d8;
+    font-weight: 700;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  nav a:hover, nav a:focus {
+    color: #a6d8d8;
+    outline: none;
+  }
+
+  /* Konten utama */
+  main {
+    flex: 1;
+    padding: 2rem 1rem 4rem;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #1a3a3a;
+  }
+  main h1 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+  }
+  main section {
+    max-width: 680px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
+  main section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+    font-weight: 700;
+  }
+  main section p {
+    margin-bottom: 1rem;
+  }
+  /* Gambar profil/ilustrasi di bawah Tentang Kami */
+  .about-image-container {
+    text-align: center;
+    margin: 1.5rem auto 3rem auto;
+    max-width: 400px;
+  }
+  .about-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(26, 58, 58, 0.3);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Footer */
+  footer {
+    background: #1a3a3a;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.7rem 1rem;
+    user-select: none;
+    flex-shrink: 0;
+  }
+  footer a {
+    color: #76c7c7;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  footer a:hover, footer a:focus {
+    text-decoration: underline;
+    outline: none;
+  }
+
+  /* Responsif untuk layar kecil */
+  @media (max-width: 350px), (max-height: 600px) {
+    nav {
+      padding: 0.5rem 0.7rem;
+    }
+    nav .logo {
+      font-size: 1.3rem;
+    }
+    nav ul {
+      gap: 1rem;
+    }
+    nav ul li {
+      font-size: 0.9rem;
+    }
+    main {
+      padding: 1.5rem 0.8rem 3rem;
+    }
+    main h1 {
+      font-size: 1.6rem;
+    }
+    main section {
+      max-width: 90vw;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+    main section h2 {
+      font-size: 1.2rem;
+    }
+    .about-image-container {
+      max-width: 90vw;
+      margin: 1rem auto 2rem auto;
+    }
+  }
+</style>
+</head>
+<body>
+<nav role="navigation" aria-label="Navigasi utama">
+  <div class="logo" aria-label="Logo GoFront">GoFront</div>
+  <ul role="menubar" aria-label="Menu utama">
+    <li role="none"><a role="menuitem" href="index.html" tabindex="0">Beranda</a></li>
+    <li role="none"><a role="menuitem" href="#" tabindex="0" aria-current="page">Tentang</a></li>
+    <li role="none"><a role="menuitem" href="contact.html" tabindex="0">Kontak</a></li>
+  </ul>
+</nav>
+<main>
+  <h1>Tentang GoFront</h1>
+  <section>
+    <h2>Cerita Saya</h2>
+    <p>Dengan pengalaman yang lumayan di bidang frontend development, saya bersemangat menciptakan website yang indah, cepat, dan aman yang memuaskan pengguna.</p>
+    <div class="about-image-container" aria-label="Ilustrasi pengembangan website">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Ilustrasi pengembangan website modern" />
+    </div>
+  </section>
+  <section>
+    <h2>Kemampuan & Keahlian</h2>
+    <p>Pelajar dalam HTML, CSS, JavaScript , Saya menerapkan praktik terbaik untuk aksesibilitas, SEO, dan optimasi performa agar website Anda menonjol di semua perangkat dan platform menggunakan Github.</p>
+  </section>
+  <section>
+    <h2>Pendekatan Saya</h2>
+    <p>Saya mengutamakan komunikasi jelas, pengembangan agile, dan perbaikan berkelanjutan. Saya mendengarkan kebutuhan dan tujuan Anda agar solusi yang saya berikan sesuai, efisien, dan siap masa depan, memastikan kesuksesan jangka panjang.</p>
+  </section>
+  <section>
+    <h2>Misi</h2>
+    <p>Memberdayakan bisnis dan individu dengan website yang indah, aman, dan cepat yang terjangkau dan mudah dirawat. Saya berkomitmen memberikan hasil berkualitas dengan waktu penyelesaian cepat dan dukungan terbaik.</p>
+  </section>
+</main>
+<footer role="contentinfo">
+  &copy; 2025 GoFront. Semua hak dilindungi.
+</footer>
+<script>
+ 
+</script>
+</body>
+</html>
+
